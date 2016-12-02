@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript" src="../js/vue.js"></script>
+<body>
+<div id=app>
+	<ul>
+		<tode-item v-for="item in thing" :tode="item"></tode-item>
+	</ul>
+</div>
+
+</body>
+<script type="text/javascript">
+
+Vue.component("tode-item",{
+	props:["tode"],
+	template:"<div>{{tode}}</div>"
+})
+var app = new Vue({
+  el: '#app',
+  data:{
+  	thing:["asdsad","asdassasd","yhyjkui"]
+  }
+})
+</script>
+</html>
